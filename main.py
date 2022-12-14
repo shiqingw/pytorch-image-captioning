@@ -244,6 +244,8 @@ if __name__ == "__main__":
         if new_bleu_4 > best_bleu_4 :
             best_bleu_4 = new_bleu_4
             model_state = {
+                    'epoch': epoch,
+                    'test_loss': test_loss[-1],
                     'bleu-1': test_bleu_scores["bleu-1"][-1],
                     'bleu-2': test_bleu_scores["bleu-2"][-1],
                     'bleu-3': test_bleu_scores["bleu-3"][-1],
