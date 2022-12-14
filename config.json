@@ -1,18 +1,18 @@
 {
     "dataset_dir": "dataset",
     "glove_dir": "glove_embeddings",
-    "dataset_path": "./dataset/flick8k/Flickr8k.token.txt",
+    "dataset_path": "./dataset/flickr8k/Flickr8k.token.txt",
 
     "split_images": {
-        "train": "./dataset/flick8k/Flickr_8k.trainImages.txt",
-        "validation": "./dataset/flick8k/Flickr_8k.devImages.txt",
-        "test": "./dataset/flick8k/Flickr_8k.testImages.txt"
+        "train": "./dataset/flickr8k/Flickr_8k.trainImages.txt",
+        "validation": "./dataset/flickr8k/Flickr_8k.devImages.txt",
+        "test": "./dataset/flickr8k/Flickr_8k.testImages.txt"
     },
     
     "split_save": {
-        "train": "./dataset/flick8k/train.txt",
-        "validation": "./dataset/flick8k/validation.txt",
-        "test": "./dataset/flick8k/test.txt"
+        "train": "./dataset/flickr8k/train.txt",
+        "validation": "./dataset/flickr8k/validation.txt",
+        "test": "./dataset/flickr8k/test.txt"
     },
 
     "word2idx_path": "./dataset/word2idx.json",
@@ -23,9 +23,9 @@
 
     "image_specs": {
         "image_dir": {
-            "train": "./dataset/flick8k/Images",
-            "validation": "./dataset/flick8k/Images",
-            "test": "./dataset/flick8k/Images"
+            "train": "./dataset/flickr8k/Images",
+            "validation": "./dataset/flickr8k/Images",
+            "test": "./dataset/flickr8k/Images"
         },
         "img_feature_channels": 2048,
         "image_size": 256

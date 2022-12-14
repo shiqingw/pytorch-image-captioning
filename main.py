@@ -16,8 +16,8 @@ import time
 
 from dataloader import Flickr8KDataset
 from decoder import CaptionDecoder
-from utils.decoding_utils import greedy_decoding
-from utils.utils import save_checkpoint, log_gradient_norm, set_up_causal_mask, plot_bleu_scores, plot_loss, format_time, save_dict
+from utils_local.decoding_utils import greedy_decoding
+from utils_local.other_utils import save_checkpoint, log_gradient_norm, set_up_causal_mask, plot_bleu_scores, plot_loss, format_time, save_dict
 
 
 

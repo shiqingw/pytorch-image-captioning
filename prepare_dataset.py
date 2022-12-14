@@ -1,6 +1,6 @@
 import json
 
-from utils.dataset_utils import clean_captions, create_vocab, extract_embeddings, split_dataset, load_captions
+from utils_local.dataset_utils import clean_captions, create_vocab, extract_embeddings, split_dataset, load_captions
 
 
 if __name__ == "__main__":
