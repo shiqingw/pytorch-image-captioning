@@ -16,7 +16,7 @@ def preprocess_caption(caption):
     # Remove punctuation
     caption = [word.translate(punct_table) for word in caption]
     # Remove trailing "'s" or "a"
-    caption = [word for word in caption if len(word) > 1]
+    # caption = [word for word in caption if len(word) > 1]
     # Remove tokens which contain number
     caption = [word for word in caption if word.isalpha()]
     return " ".join(caption)
@@ -167,6 +167,7 @@ def clean_captions(id2annotation):
             caption = captions[i]
             # Preprocess caption
             clean_caption = preprocess_caption(caption)
+            # clean_caption = caption
             # Save the cleaned caption
             image2caption_clean[image_id][i] =  clean_caption
 

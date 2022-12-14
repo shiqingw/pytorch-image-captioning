@@ -19,6 +19,7 @@ if __name__ == "__main__":
 
     # Create and save dataset corpus vocabulary
     vocab = create_vocab(image2caption)
+    
     # Extract GloVe embeddings for tokens present in the training set vocab
     extract_embeddings(config, vocab)
 

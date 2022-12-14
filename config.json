@@ -1,31 +1,31 @@
 {
     "dataset_dir": "dataset",
     "glove_dir": "glove_embeddings",
-    "dataset_path": ".\\dataset\\flick8k\\omg.txt",
+    "dataset_path": "./dataset/flick8k/Flickr8k.token.txt",
 
     "split_images": {
-        "train": ".\\dataset\\flick8k\\Flickr_8k.trainImages.txt",
-        "validation": ".\\dataset\\flick8k\\Flickr_8k.devImages.txt",
-        "test": ".\\dataset\\flick8k\\Flickr_8k.testImages.txt"
+        "train": "./dataset/flick8k/Flickr_8k.trainImages.txt",
+        "validation": "./dataset/flick8k/Flickr_8k.devImages.txt",
+        "test": "./dataset/flick8k/Flickr_8k.testImages.txt"
     },
     
     "split_save": {
-        "train": ".\\dataset\\flick8k\\train.txt",
-        "validation": ".\\dataset\\flick8k\\validation.txt",
-        "test": ".\\dataset\\flick8k\\test.txt"
+        "train": "./dataset/flick8k/train.txt",
+        "validation": "./dataset/flick8k/validation.txt",
+        "test": "./dataset/flick8k/test.txt"
     },
 
-    "word2idx_path": ".\\dataset\\word2idx.json",
+    "word2idx_path": "./dataset/word2idx.json",
     "embeddings": {
-        "path": ".\\dataset\\embeddings.txt",
+        "path": "./dataset/embeddings.txt",
         "size": 100
     },
 
     "image_specs": {
         "image_dir": {
-            "train": ".\\dataset\\flick8k\\Images",
-            "validation": ".\\dataset\\flick8k\\Images",
-            "test": ".\\dataset\\flick8k\\Images"
+            "train": "./dataset/flick8k/Images",
+            "validation": "./dataset/flick8k/Images",
+            "test": "./dataset/flick8k/Images"
         },
         "img_feature_channels": 2048,
         "image_size": 256
@@ -48,11 +48,11 @@
     "max_len": 64,
 
     "use_gpu": true,
-    "seed": 2021,
+    "seed": 0,
 
     "batch_size": {
-        "train": 32,
-        "eval": 32
+        "train": 100,
+        "eval": 100
     },
 
     "model_configuration": {
@@ -64,10 +64,10 @@
     },
 
     "train_config": {
-        "num_of_epochs": 100,
+        "num_of_epochs": 25,
         "warmup_steps": 2811,
-        "l2_penalty": 0.5,
-        "learning_rate": 0.000008,
+        "l2_penalty": 1e-2,
+        "learning_rate": 3e-4,
         "gradient_clipping": 2.0,
         "eval_period": 3
     },
