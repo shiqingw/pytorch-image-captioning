@@ -31,7 +31,7 @@
         "image_size": 256
     },
 
-    "vocab_size": 7890,
+    "vocab_size": 7902,
 
     "PAD_token": "<pad>",
     "PAD_idx": 0,
