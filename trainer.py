@@ -119,7 +119,7 @@ def generate_samples(subset, encoder, decoder, config, device, result_dir, subse
             img_features = img_features.permute(0, 2, 1)
             img_features = img_features.detach()
             predictions = greedy_decoding(decoder, img_features, sos_id, eos_id, pad_id, idx2word, max_len, device)
-            caption = ' '.join(predictions)
+            caption = ' '.join(predictions[0])
             save_image(image[0], os.path.join(result_dir, "{}_{:03d}".format(subset_name, i)), caption=caption)
         break
     return 
