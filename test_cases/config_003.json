@@ -65,7 +65,7 @@
 
     "train_config": {
         "num_of_epochs": 40,
-        "optimizer": "AdamW",
+        "optimizer": "SGD",
         "warmup_steps": 2811,
         "l2_penalty": 1e-2,
         "learning_rate": 1e-4,

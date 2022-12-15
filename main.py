@@ -97,19 +97,25 @@ if __name__ == "__main__":
     train_config = config["train_config"]
 
     # Prepare the model optimizer
-    if train_config["optimizer"] == "AdamW":
-        optimizer = torch.optim.AdamW(
+    if train_config["optimizer"] == "SGD":
+        optimizer = torch.optim.SGD(
+            decoder.parameters(),
+            lr=train_config["learning_rate"],
+            momentum=0.9,
+            weight_decay=train_config["l2_penalty"]
+        )
+    elif train_config["optimizer"] == "Adam":
+        optimizer = torch.optim.Adam(
             decoder.parameters(),
             lr=train_config["learning_rate"],
             weight_decay=train_config["l2_penalty"]
         )
-    elif train_config["optimizer"] == "Adam":
-        optimizer = torch.optim.AdamW(
-            decoder.parameters(),
-            lr=train_config["learning_rate"],
-        )
     else:
         raise ValueError("Optimizer not defined!")
+    
+    # learning rate scheduler
+    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=train_config["num_of_epochs"])
+    
     # Loss function
     loss_fcn = nn.CrossEntropyLoss(label_smoothing=0.1)
     train_loss = []
@@ -237,6 +243,8 @@ if __name__ == "__main__":
         train(epoch, train_loss)
         validate(epoch, validation_loss)
         test(epoch, test_loss)
+        scheduler.step()
+
         evaluate(epoch, valid_set, encoder, decoder, config, device, validation_bleu_scores)
         evaluate(epoch, test_set, encoder, decoder, config, device, test_bleu_scores)
 
