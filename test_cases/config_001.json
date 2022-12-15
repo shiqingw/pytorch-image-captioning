@@ -65,12 +65,11 @@
 
     "train_config": {
         "num_of_epochs": 25,
-        "optimizer": "SGD",
-        "warmup_steps": 2811,
-        "l2_penalty": 1e-2,
+        "optimizer": "Adam",
+        "l2_penalty": 0,
         "learning_rate": 3e-4,
         "gradient_clipping": 2.0,
-        "eval_period": 3
+        "scheduler": "None"
     },
 
     "bleu_weights": {
