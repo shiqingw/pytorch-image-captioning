@@ -7,17 +7,13 @@ import numpy as np
 import torch.nn as nn
 from torch.utils.data import DataLoader
 import torchvision.models as models
-from nltk.translate.bleu_score import corpus_bleu
-
-from tensorboardX import SummaryWriter
 
 from trainer import evaluate, generate_samples
 import time
 
 from dataloader import Flickr8KDataset
 from decoder import CaptionDecoder
-from utils_local.decoding_utils import greedy_decoding
-from utils_local.other_utils import save_checkpoint, log_gradient_norm, set_up_causal_mask, plot_bleu_scores, plot_loss, format_time, save_dict
+from utils_local.other_utils import set_up_causal_mask, plot_bleu_scores, plot_loss, format_time, save_dict
 
 
 
@@ -30,13 +26,10 @@ if __name__ == "__main__":
     if not os.path.isdir(result_dir):
         os.mkdir(result_dir)
     # Load the pipeline configuration file
-    config_path = "config.json"
+    config_path = "./test_cases/config_{:03d}.json".format(exp_num)
     with open(config_path, "r", encoding="utf8") as f:
         config = json.load(f)
 
-    writer = SummaryWriter()
-    # use_gpu = config["use_gpu"] and torch.cuda.is_available()
-    # device = torch.device("cuda" if use_gpu else "cpu")
     if platform.system() == 'Darwin':
         if not torch.backends.mps.is_available():
             device = 'cpu'
@@ -102,14 +95,21 @@ if __name__ == "__main__":
 
     # Load training configuration
     train_config = config["train_config"]
-    learning_rate = train_config["learning_rate"]
 
     # Prepare the model optimizer
-    optimizer = torch.optim.AdamW(
-        decoder.parameters(),
-        lr=train_config["learning_rate"],
-        weight_decay=train_config["l2_penalty"]
-    )
+    if train_config["optimizer"] == "AdamW":
+        optimizer = torch.optim.AdamW(
+            decoder.parameters(),
+            lr=train_config["learning_rate"],
+            weight_decay=train_config["l2_penalty"]
+        )
+    elif train_config["optimizer"] == "Adam":
+        optimizer = torch.optim.AdamW(
+            decoder.parameters(),
+            lr=train_config["learning_rate"],
+        )
+    else:
+        raise ValueError("Optimizer not defined!")
     # Loss function
     loss_fcn = nn.CrossEntropyLoss(label_smoothing=0.1)
     train_loss = []
