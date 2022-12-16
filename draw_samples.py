@@ -62,8 +62,8 @@ if __name__ == '__main__':
     # Instantiate the decoder
     decoder = CaptionDecoder(config)
     
-    # checkpoint = torch.load(os.path.join(result_dir, "transformer_model_state.pth"))
-    # decoder.load_state_dict(checkpoint['decoder_state_dict'])
+    checkpoint = torch.load(os.path.join(result_dir, "transformer_model_state.pth"))
+    decoder.load_state_dict(checkpoint['decoder_state_dict'])
     decoder = decoder.to(device)
     decoder.eval()
 
@@ -95,6 +95,7 @@ if __name__ == '__main__':
         data = f.read()
     name_list = data.split("\n")
     for i in range(30):
+        print("==> Drawing sample {:03d} ...".format(i))
         img_name = name_list[i]
         img_location = os.path.join("./dataset/flickr8k/Images",img_name)
         img = Image.open(img_location).convert("RGB")
