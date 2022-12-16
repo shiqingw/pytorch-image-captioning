@@ -94,8 +94,8 @@ if __name__ == '__main__':
     with open(sample_list_path, "r") as f:
         data = f.read()
     name_list = data.split("\n")
-    for i in range(30):
-        print("==> Drawing sample {:03d} ...".format(i))
+    for i in range(50):
+        # print("==> Drawing sample {:03d} ...".format(i))
         img_name = name_list[i]
         img_location = os.path.join("./dataset/flickr8k/Images",img_name)
         img = Image.open(img_location).convert("RGB")
