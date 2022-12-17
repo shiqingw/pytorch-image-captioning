@@ -1,0 +1,167 @@
+==> device:  cuda
+==> Epoch: 000
+Epoch: 000 | Loss: 5.770 | Training time: 2m32s
+Epoch: 000 | Loss: 5.107 | Validation time: 25s437ms
+Epoch: 000 | Loss: 5.068 | Testing time: 26s6ms
+Epoch: 000 | Bleu scores: 44.415 | 27.664 | 15.194 | 8.505 | Evaluation time: 42s41ms
+Epoch: 000 | Bleu scores: 44.546 | 27.664 | 14.343 | 7.837 | Evaluation time: 39s687ms
+==> Saving...
+==> Drawing samples...
+==> Epoch: 001
+Epoch: 001 | Loss: 4.772 | Training time: 2m32s
+Epoch: 001 | Loss: 4.680 | Validation time: 25s651ms
+Epoch: 001 | Loss: 4.629 | Testing time: 25s919ms
+Epoch: 001 | Bleu scores: 46.114 | 30.009 | 17.221 | 9.229 | Evaluation time: 47s182ms
+Epoch: 001 | Bleu scores: 45.602 | 29.600 | 16.727 | 9.062 | Evaluation time: 47s746ms
+==> Saving...
+==> Drawing samples...
+==> Epoch: 002
+Epoch: 002 | Loss: 4.448 | Training time: 2m31s
+Epoch: 002 | Loss: 4.475 | Validation time: 25s621ms
+Epoch: 002 | Loss: 4.422 | Testing time: 25s752ms
+Epoch: 002 | Bleu scores: 45.798 | 30.640 | 18.650 | 10.585 | Evaluation time: 47s471ms
+Epoch: 002 | Bleu scores: 48.502 | 32.797 | 20.061 | 11.666 | Evaluation time: 47s808ms
+==> Saving...
+==> Drawing samples...
+==> Epoch: 003
+Epoch: 003 | Loss: 4.256 | Training time: 2m33s
+Epoch: 003 | Loss: 4.374 | Validation time: 25s763ms
+Epoch: 003 | Loss: 4.327 | Testing time: 25s449ms
+Epoch: 003 | Bleu scores: 57.556 | 39.842 | 25.395 | 15.416 | Evaluation time: 47s317ms
+Epoch: 003 | Bleu scores: 60.163 | 41.809 | 26.907 | 16.922 | Evaluation time: 39s834ms
+==> Saving...
+==> Drawing samples...
+==> Epoch: 004
+Epoch: 004 | Loss: 4.116 | Training time: 2m33s
+Epoch: 004 | Loss: 4.316 | Validation time: 25s423ms
+Epoch: 004 | Loss: 4.268 | Testing time: 25s895ms
+Epoch: 004 | Bleu scores: 60.271 | 42.122 | 27.031 | 16.334 | Evaluation time: 36s569ms
+Epoch: 004 | Bleu scores: 61.351 | 43.393 | 28.718 | 18.569 | Evaluation time: 33s386ms
+==> Saving...
+==> Drawing samples...
+==> Epoch: 005
+Epoch: 005 | Loss: 4.000 | Training time: 2m32s
+Epoch: 005 | Loss: 4.256 | Validation time: 25s650ms
+Epoch: 005 | Loss: 4.216 | Testing time: 25s829ms
+Epoch: 005 | Bleu scores: 58.942 | 41.050 | 26.529 | 16.271 | Evaluation time: 41s488ms
+Epoch: 005 | Bleu scores: 59.810 | 42.348 | 28.027 | 17.941 | Evaluation time: 37s481ms
+==> Epoch: 006
+Epoch: 006 | Loss: 3.900 | Training time: 2m31s
+Epoch: 006 | Loss: 4.243 | Validation time: 25s306ms
+Epoch: 006 | Loss: 4.200 | Testing time: 25s334ms
+Epoch: 006 | Bleu scores: 61.692 | 43.014 | 27.801 | 17.316 | Evaluation time: 24s552ms
+Epoch: 006 | Bleu scores: 60.786 | 42.708 | 28.085 | 17.682 | Evaluation time: 18s910ms
+==> Epoch: 007
+Epoch: 007 | Loss: 3.815 | Training time: 2m30s
+Epoch: 007 | Loss: 4.227 | Validation time: 25s660ms
+Epoch: 007 | Loss: 4.183 | Testing time: 25s323ms
+Epoch: 007 | Bleu scores: 60.585 | 42.181 | 27.795 | 17.804 | Evaluation time: 23s49ms
+Epoch: 007 | Bleu scores: 60.858 | 43.136 | 28.904 | 18.775 | Evaluation time: 18s894ms
+==> Saving...
+==> Drawing samples...
+==> Epoch: 008
+Epoch: 008 | Loss: 3.742 | Training time: 2m31s
+Epoch: 008 | Loss: 4.198 | Validation time: 25s528ms
+Epoch: 008 | Loss: 4.158 | Testing time: 25s857ms
+Epoch: 008 | Bleu scores: 59.345 | 40.716 | 26.262 | 16.538 | Evaluation time: 29s297ms
+Epoch: 008 | Bleu scores: 59.656 | 41.957 | 27.418 | 17.136 | Evaluation time: 28s291ms
+==> Epoch: 009
+Epoch: 009 | Loss: 3.677 | Training time: 2m31s
+Epoch: 009 | Loss: 4.192 | Validation time: 25s549ms
+Epoch: 009 | Loss: 4.148 | Testing time: 25s498ms
+Epoch: 009 | Bleu scores: 59.587 | 41.092 | 26.926 | 17.049 | Evaluation time: 20s566ms
+Epoch: 009 | Bleu scores: 59.590 | 41.640 | 27.489 | 17.584 | Evaluation time: 22s894ms
+==> Epoch: 010
+Epoch: 010 | Loss: 3.618 | Training time: 2m31s
+Epoch: 010 | Loss: 4.195 | Validation time: 25s605ms
+Epoch: 010 | Loss: 4.148 | Testing time: 25s676ms
+Epoch: 010 | Bleu scores: 59.272 | 40.367 | 25.833 | 15.859 | Evaluation time: 28s997ms
+Epoch: 010 | Bleu scores: 59.102 | 40.810 | 26.521 | 16.698 | Evaluation time: 28s186ms
+==> Epoch: 011
+Epoch: 011 | Loss: 3.570 | Training time: 2m31s
+Epoch: 011 | Loss: 4.191 | Validation time: 25s404ms
+Epoch: 011 | Loss: 4.144 | Testing time: 25s355ms
+Epoch: 011 | Bleu scores: 58.235 | 39.615 | 25.696 | 16.039 | Evaluation time: 32s514ms
+Epoch: 011 | Bleu scores: 58.268 | 40.247 | 26.263 | 16.378 | Evaluation time: 22s697ms
+==> Epoch: 012
+Epoch: 012 | Loss: 3.524 | Training time: 2m31s
+Epoch: 012 | Loss: 4.186 | Validation time: 25s399ms
+Epoch: 012 | Loss: 4.142 | Testing time: 25s630ms
+Epoch: 012 | Bleu scores: 57.862 | 39.615 | 25.625 | 16.034 | Evaluation time: 25s175ms
+Epoch: 012 | Bleu scores: 57.325 | 39.680 | 25.643 | 15.665 | Evaluation time: 21s623ms
+==> Epoch: 013
+Epoch: 013 | Loss: 3.487 | Training time: 2m30s
+Epoch: 013 | Loss: 4.199 | Validation time: 25s670ms
+Epoch: 013 | Loss: 4.150 | Testing time: 25s271ms
+Epoch: 013 | Bleu scores: 57.709 | 39.517 | 25.738 | 16.224 | Evaluation time: 29s578ms
+Epoch: 013 | Bleu scores: 57.699 | 40.160 | 26.233 | 16.334 | Evaluation time: 27s813ms
+==> Epoch: 014
+Epoch: 014 | Loss: 3.453 | Training time: 2m31s
+Epoch: 014 | Loss: 4.195 | Validation time: 25s576ms
+Epoch: 014 | Loss: 4.150 | Testing time: 25s461ms
+Epoch: 014 | Bleu scores: 57.837 | 39.395 | 25.456 | 15.900 | Evaluation time: 30s917ms
+Epoch: 014 | Bleu scores: 57.690 | 39.908 | 25.847 | 16.224 | Evaluation time: 25s171ms
+==> Epoch: 015
+Epoch: 015 | Loss: 3.425 | Training time: 2m31s
+Epoch: 015 | Loss: 4.204 | Validation time: 25s325ms
+Epoch: 015 | Loss: 4.156 | Testing time: 25s411ms
+Epoch: 015 | Bleu scores: 57.985 | 39.971 | 26.060 | 16.414 | Evaluation time: 23s569ms
+Epoch: 015 | Bleu scores: 57.742 | 39.912 | 25.692 | 15.915 | Evaluation time: 28s496ms
+==> Epoch: 016
+Epoch: 016 | Loss: 3.399 | Training time: 2m31s
+Epoch: 016 | Loss: 4.201 | Validation time: 25s602ms
+Epoch: 016 | Loss: 4.155 | Testing time: 25s751ms
+Epoch: 016 | Bleu scores: 57.834 | 39.561 | 25.656 | 16.154 | Evaluation time: 25s289ms
+Epoch: 016 | Bleu scores: 56.562 | 38.850 | 25.051 | 15.374 | Evaluation time: 30s819ms
+==> Epoch: 017
+Epoch: 017 | Loss: 3.379 | Training time: 2m31s
+Epoch: 017 | Loss: 4.206 | Validation time: 25s807ms
+Epoch: 017 | Loss: 4.157 | Testing time: 25s361ms
+Epoch: 017 | Bleu scores: 58.222 | 39.865 | 25.879 | 16.376 | Evaluation time: 22s484ms
+Epoch: 017 | Bleu scores: 57.578 | 39.783 | 25.652 | 15.710 | Evaluation time: 22s884ms
+==> Epoch: 018
+Epoch: 018 | Loss: 3.362 | Training time: 2m31s
+Epoch: 018 | Loss: 4.203 | Validation time: 25s513ms
+Epoch: 018 | Loss: 4.155 | Testing time: 25s347ms
+Epoch: 018 | Bleu scores: 57.238 | 39.043 | 25.186 | 15.764 | Evaluation time: 23s326ms
+Epoch: 018 | Bleu scores: 56.760 | 39.321 | 25.445 | 15.768 | Evaluation time: 27s255ms
+==> Epoch: 019
+Epoch: 019 | Loss: 3.350 | Training time: 2m31s
+Epoch: 019 | Loss: 4.206 | Validation time: 25s873ms
+Epoch: 019 | Loss: 4.159 | Testing time: 25s756ms
+Epoch: 019 | Bleu scores: 58.321 | 40.012 | 26.010 | 16.303 | Evaluation time: 24s776ms
+Epoch: 019 | Bleu scores: 57.158 | 39.524 | 25.625 | 16.010 | Evaluation time: 26s905ms
+==> Epoch: 020
+Epoch: 020 | Loss: 3.340 | Training time: 2m30s
+Epoch: 020 | Loss: 4.208 | Validation time: 25s357ms
+Epoch: 020 | Loss: 4.159 | Testing time: 25s461ms
+Epoch: 020 | Bleu scores: 57.970 | 39.530 | 25.548 | 15.927 | Evaluation time: 27s309ms
+Epoch: 020 | Bleu scores: 57.716 | 39.994 | 25.913 | 16.131 | Evaluation time: 22s180ms
+==> Epoch: 021
+Epoch: 021 | Loss: 3.331 | Training time: 2m31s
+Epoch: 021 | Loss: 4.209 | Validation time: 25s393ms
+Epoch: 021 | Loss: 4.161 | Testing time: 25s625ms
+Epoch: 021 | Bleu scores: 57.478 | 39.539 | 25.692 | 16.138 | Evaluation time: 23s179ms
+Epoch: 021 | Bleu scores: 56.895 | 39.325 | 25.347 | 15.673 | Evaluation time: 18s316ms
+==> Epoch: 022
+Epoch: 022 | Loss: 3.326 | Training time: 2m31s
+Epoch: 022 | Loss: 4.210 | Validation time: 25s435ms
+Epoch: 022 | Loss: 4.162 | Testing time: 25s350ms
+Epoch: 022 | Bleu scores: 58.107 | 39.878 | 25.901 | 16.257 | Evaluation time: 23s310ms
+Epoch: 022 | Bleu scores: 57.158 | 39.649 | 25.843 | 16.154 | Evaluation time: 24s246ms
+==> Epoch: 023
+Epoch: 023 | Loss: 3.324 | Training time: 2m31s
+Epoch: 023 | Loss: 4.211 | Validation time: 25s712ms
+Epoch: 023 | Loss: 4.162 | Testing time: 25s605ms
+Epoch: 023 | Bleu scores: 57.856 | 39.719 | 25.787 | 16.112 | Evaluation time: 22s820ms
+Epoch: 023 | Bleu scores: 57.313 | 39.765 | 25.810 | 16.020 | Evaluation time: 19s327ms
+==> Epoch: 024
+Epoch: 024 | Loss: 3.321 | Training time: 2m31s
+Epoch: 024 | Loss: 4.211 | Validation time: 25s346ms
+Epoch: 024 | Loss: 4.162 | Testing time: 25s474ms
+Epoch: 024 | Bleu scores: 58.089 | 39.908 | 25.882 | 16.163 | Evaluation time: 23s74ms
+Epoch: 024 | Bleu scores: 57.252 | 39.659 | 25.724 | 15.978 | Evaluation time: 19s432ms
+Total Time: 1h50m
+==> Saving training/validation/testing loss...
+==> Drawing loss and bleu scores...
+==> Process finished.
