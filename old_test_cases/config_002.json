@@ -66,10 +66,10 @@
     "train_config": {
         "num_of_epochs": 25,
         "optimizer": "Adam",
-        "l2_penalty": 1e-5,
-        "learning_rate": 1e-4,
+        "l2_penalty": 0,
+        "learning_rate": 3e-4,
         "gradient_clipping": 2.0,
-        "scheduler": "None"
+        "scheduler": "CosineAnnealingLR"
     },
 
     "bleu_weights": {
