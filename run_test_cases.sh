@@ -9,7 +9,7 @@ python3 -u main.py --exp_num 8 > results/exp_008/output.out
 python3 -u main.py --exp_num 9 > results/exp_009/output.out
 python3 -u main.py --exp_num 10 > results/exp_010/output.out
 python3 -u main.py --exp_num 11 > results/exp_011/output.out
-python3 -u main.py --exp_num 12 > results/exp_013/output.out
+python3 -u main.py --exp_num 12 > results/exp_012/output.out
 python3 -u main.py --exp_num 13 > results/exp_013/output.out
 python3 -u draw_samples.py --exp_num 1
 python3 -u draw_samples.py --exp_num 2

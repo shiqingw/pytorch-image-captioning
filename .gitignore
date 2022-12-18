@@ -2,3 +2,5 @@ dataset/flickr8k/Images
 __pycache__
 glove_embeddings
 results/**/*.pth
+new_results
+old_results_weights
