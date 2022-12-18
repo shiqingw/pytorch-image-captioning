@@ -103,6 +103,18 @@ if __name__ == "__main__":
             lr=train_config["learning_rate"],
             weight_decay=train_config["l2_penalty"]
         )
+    elif train_config["optimizer"] == "AdamW":
+        optimizer = torch.optim.AdamW(
+            decoder.parameters(),
+            lr=train_config["learning_rate"],
+            weight_decay=train_config["l2_penalty"]
+        )
+    elif train_config["optimizer"] == "SGD":
+        optimizer = torch.optim.SGD(
+            decoder.parameters(),
+            lr=train_config["learning_rate"],
+            weight_decay=train_config["l2_penalty"]
+        )
     else:
         raise ValueError("Optimizer not defined!")
     
