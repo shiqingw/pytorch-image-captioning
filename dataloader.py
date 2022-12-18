@@ -50,7 +50,7 @@ class Flickr8KDataset(Dataset):
 
         # Transformation to apply to each image
         self._image_specs = config["image_specs"]
-        self._image_transform = self._construct_image_transform()
+        self._image_transform = self._construct_image_transform(self._image_specs["image_size"])
 
         # Create paths to image files belonging to the subset
         subset = "train" if training else "validation"
@@ -63,7 +63,7 @@ class Flickr8KDataset(Dataset):
         self._dataset_size = len(self._data)
 
 
-    def _construct_image_transform(self):
+    def _construct_image_transform(self, image_size):
         """Constructs the image preprocessing transform object.
 
         Arguments:
@@ -75,8 +75,8 @@ class Flickr8KDataset(Dataset):
             std=[0.229, 0.224, 0.225]
         )
         preprocessing = transforms.Compose([
-            transforms.Resize(226),
-            transforms.CenterCrop(224),
+            transforms.Resize(256),
+            transforms.CenterCrop(image_size),
             transforms.ToTensor(),
             normalize,
         ])
