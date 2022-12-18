@@ -1,4 +1,3 @@
 nohup: ignoring input
-run_test_cases.sh: line 7: 27976 Terminated              python3 -u main.py --exp_num 7 > results/exp_007/output.out
-run_test_cases.sh: line 8:  1384 Terminated              python3 -u main.py --exp_num 8 > results/exp_008/output.out
-run_test_cases.sh: line 9:  1446 Terminated              python3 -u main.py --exp_num 9 > results/exp_009/output.out
+==> device:  cuda
+==> device:  cuda
